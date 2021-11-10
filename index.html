@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1175a7f98e.js" crossorigin="anonymous"></script>
+    <title>YuGiOh Dark Magician Theme - JS Website</title>
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="nav-bar container">
+        <div class="img-container">
+            <img src="https://images2.imgbox.com/79/d6/CU5rQtCF_o.png" alt="logo">
+        </div>
+        <h1 class="title header-lg">Dark Magician Theme</h1>
+    </nav>
+    <div class="option-container container">
+        <button class="navbar-toggler btn btn-primary" aria-expanded="false" aria-controls="navBarDropdown">
+            Options
+        </button>
+        <ul id="main-page" class="ul-defaults-none header-sm">
+                <li data-list="original" class="sorted btn btn-alt active">A-Z</li>
+                <li data-list="reverse" class="sorted btn btn-alt">Z-A</li>
+                <li data-list="monsters" class="sorted btn btn-alt">Monsters</li>
+                <li data-list="spells" class="sorted btn btn-alt">Spells</li>
+                <li data-list="traps" class="sorted btn btn-alt">Traps</li>
+        </ul>
+        <button class="favorites-link btn btn-primary" data-open="favorites">
+            Go to Favorites
+        </button>
+    </div>
+    <div class="slide-control-container container">
+        <button>
+            <i class="fas fa-arrow-left"></i>
+        </button>
+        <button>
+            <i class="fas fa-arrow-right"></i>
+        </button>
+    </div>
+
+    <section id="api-grid" class="container"></section>
+    <section class="card-count container"></section>
+
+    <section id="favorites" class="favorites-full-modal" data-animation="zoomInOut"></section>
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>
